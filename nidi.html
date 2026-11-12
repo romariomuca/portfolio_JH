@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Oggi siamo in regola? — Jet per scuole e nidi</title>
+<meta name="description" content="Romario Muca — candidatura Product Designer per Jet HR">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Figtree:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@500;700&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#000000;font-family:'Inter',system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:#FFFFFF}a:hover{color:#D9D9D9}
+.btn{cursor:pointer;transition:background .2s,filter .2s}
+.btn:focus-visible{outline:2px solid #3B5BDB;outline-offset:2px}
+.btn-dark:hover{background:#2A2A2A}
+.btn-light:hover{background:#F2F2F2}
+.tab:hover{color:#FFFFFF}
+.sez{transition:border-color .4s,background .4s}
+.ratio{transition:color .4s}
+.bar-fill{transition:width .6s cubic-bezier(.22,1,.36,1),background .4s}
+@keyframes rise{from{transform:translateY(12px);opacity:0}to{transform:translateY(0);opacity:1}}
+.toast{animation:rise .5s cubic-bezier(.22,1,.36,1)}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.35}}
+.dot-live{animation:pulse 1.4s ease-in-out infinite}
+.jet{font-family:'Figtree',system-ui,sans-serif}
+.navi:hover{background:#F4F4F2}
+@keyframes spin{to{transform:rotate(360deg)}}
+.spin{width:12px;height:12px;border-radius:999px;border:2px solid #DADAD5;border-top-color:#111111;animation:spin .7s linear infinite;box-sizing:border-box}
+@keyframes draw{from{stroke-dashoffset:24}to{stroke-dashoffset:0}}
+.check path{stroke-dasharray:24;stroke-dashoffset:24;animation:draw .45s cubic-bezier(.22,1,.36,1) forwards}
+@keyframes fadeUp{from{opacity:0;transform:translateY(3px)}to{opacity:1;transform:translateY(0)}}
+.s-in{display:inline-block;animation:fadeUp .3s ease}
+.inv-btn{transition:background .35s,color .35s,border-color .35s,opacity .3s}
+.inv-btn:disabled{cursor:default}
+.slot-empty{cursor:pointer;transition:background .2s,transform .2s}
+.slot-empty:hover span:first-child{background:#FFF1F0 !important}
+.blk{transition:width .6s cubic-bezier(.22,1,.36,1),background .4s,border-color .4s}
+@keyframes fadeIn{from{opacity:0}to{opacity:1}}
+.scrim{animation:fadeIn .3s ease}
+@keyframes pop{from{transform:translate(-50%,8px);opacity:0}to{transform:translate(-50%,0);opacity:1}}
+.picker{transform:translateX(-50%);animation:pop .35s cubic-bezier(.22,1,.36,1)}
+.slot-empty:focus-visible{outline:2px solid #E5484D;outline-offset:4px;border-radius:8px}
+.kid{transition:background .45s ease,border-color .45s ease,transform .45s cubic-bezier(.22,1,.36,1)}
+.next-btn{transition:background .3s,border-color .3s}
+.next-btn:hover{background:#FFFFFF;color:#111111 !important;border-color:#FFFFFF}
+.next-btn span{display:inline-block;transition:transform .3s cubic-bezier(.22,1,.36,1)}
+.next-btn:hover span{transform:translateX(4px)}
+.home-link{transition:opacity .3s}
+.home-link:hover{opacity:.6}
+</style>
+</head>
+<body>
+<div id="app"></div>
+<script src="assets/nidi.js"></script>
+</body>
+</html>

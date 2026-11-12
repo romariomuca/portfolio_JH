@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Odio il portfolio</title>
+<meta name="description" content="Romario Muca — candidatura Product Designer per Jet HR">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500;600;700&amp;family=Inter:wght@400;500&amp;family=JetBrains+Mono:wght@500;700&amp;family=Figtree:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#000000;font-family:'Inter',system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:#EDEDED}a:hover{color:#FFFFFF}
+.q-btn{transition:background .3s,border-color .3s}
+.q-btn:hover{background:rgba(255,255,255,.1);border-color:rgba(255,255,255,.35)}
+.q-btn:focus-visible{outline:2px solid #FFFFFF;outline-offset:4px}
+.tip{opacity:0;transform:translateX(6px);transition:opacity .35s ease,transform .45s cubic-bezier(.22,1,.36,1);pointer-events:none}
+.tip-wrap:hover .tip,.tip.on{opacity:1;transform:translateX(0)}
+.arrow svg{animation:bob 2.2s cubic-bezier(.45,0,.55,1) infinite}
+@keyframes bob{0%,100%{transform:translateY(-3px);opacity:.55}50%{transform:translateY(5px);opacity:1}}
+.arrow:focus-visible{outline:2px solid #FFFFFF;outline-offset:4px;border-radius:999px}
+.col .card{transform:translateY(120px);transition:transform .7s cubic-bezier(.22,1,.36,1)}
+.col:hover .card,.col:focus-within .card{transform:translateY(0)}
+.col .noise{opacity:.07;transition:opacity .5s ease}
+.col:hover .noise{opacity:.18;animation:grain .45s steps(3) infinite}
+@keyframes grain{0%{transform:translate(0,0)}33%{transform:translate(-3%,2%)}66%{transform:translate(2%,-3%)}100%{transform:translate(0,0)}}
+.pill-arrow{transition:background .3s}
+.pill-arrow svg{transition:transform .5s cubic-bezier(.22,1,.36,1)}
+.col:hover .pill-arrow{background:rgba(255,255,255,.12)}
+.col:hover .pill-arrow svg,.col:focus-within .pill-arrow svg{transform:rotate(45deg)}
+</style>
+</head>
+<body>
+<div id="app"></div>
+<script src="assets/index.js"></script>
+</body>
+</html>
